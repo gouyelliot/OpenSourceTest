@@ -12,6 +12,7 @@
 [![SonarCloud Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=gouyelliot_OpenSourceTest&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=gouyelliot_OpenSourceTest)
 [![Maintainability](https://api.codeclimate.com/v1/badges/25059514b2bd2cfe03fd/maintainability)](https://codeclimate.com/github/gouyelliot/OpenSourceTest/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/25059514b2bd2cfe03fd/test_coverage)](https://codeclimate.com/github/gouyelliot/OpenSourceTest/test_coverage)
+[![Build Status](https://app.bitrise.io/app/a5eecbb37d10716f/status.svg?token=OWhZ-7Qi87uhBMrvNYENbw)](https://app.bitrise.io/app/a5eecbb37d10716f)
 
 # Open Source Test
 
