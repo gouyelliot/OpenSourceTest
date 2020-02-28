@@ -17,7 +17,7 @@ lint:
 	./gradlew lintDebug
 
 codecov:
-	bash <(curl -s https://codecov.io/bash)
+	curl -s https://codecov.io/bash | bash
 
 sonar:
 	./gradlew sonarqube
