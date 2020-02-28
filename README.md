@@ -10,6 +10,8 @@
 [![SonarCloud Security](https://sonarcloud.io/api/project_badges/measure?project=gouyelliot_OpenSourceTest&metric=security_rating)](https://sonarcloud.io/dashboard?id=gouyelliot_OpenSourceTest)
 [![SonarCloud Bugs](https://sonarcloud.io/api/project_badges/measure?project=gouyelliot_OpenSourceTest&metric=bugs)](https://sonarcloud.io/dashboard?id=gouyelliot_OpenSourceTest)
 [![SonarCloud Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=gouyelliot_OpenSourceTest&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=gouyelliot_OpenSourceTest)
+[![Maintainability](https://api.codeclimate.com/v1/badges/25059514b2bd2cfe03fd/maintainability)](https://codeclimate.com/github/gouyelliot/OpenSourceTest/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/25059514b2bd2cfe03fd/test_coverage)](https://codeclimate.com/github/gouyelliot/OpenSourceTest/test_coverage)
 
 # Open Source Test
 
