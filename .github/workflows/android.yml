@@ -22,4 +22,5 @@ jobs:
       - name: Upload SonarCloud
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_UPLOAD_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: make sonar
