@@ -1,7 +1,6 @@
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.batch.android/batch-sdk/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.batch.android/batch-sdk)
 ![GitHub Workflow Status](https://github.com/gouyelliot/OpenSourceTest/workflows/Android%20CI/badge.svg)
 [![codecov](https://codecov.io/gh/gouyelliot/OpenSourceTest/branch/master/graph/badge.svg)](https://codecov.io/gh/gouyelliot/OpenSourceTest)
-
 [![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=gouyelliot_OpenSourceTest&metric=alert_status)](https://sonarcloud.io/dashboard?id=gouyelliot_OpenSourceTest)
 [![SonarCloud Coverage](https://sonarcloud.io/api/project_badges/measure?project=gouyelliot_OpenSourceTest&metric=coverage)](https://sonarcloud.io/dashboard?id=gouyelliot_OpenSourceTest)
 [![SonarCloud Code Lines](https://sonarcloud.io/api/project_badges/measure?project=gouyelliot_OpenSourceTest&metric=ncloc)](https://sonarcloud.io/dashboard?id=gouyelliot_OpenSourceTest)
