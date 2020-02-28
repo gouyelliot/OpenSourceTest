@@ -1,0 +1,37 @@
+apply plugin: 'org.sonarqube'
+
+sonarqube {
+    properties {
+
+        def libraries = project.android.sdkDirectory.getPath() + "/platforms/android-" + project.android.defaultConfig.targetSdkVersion.mApiLevel + "/android.jar"
+        //if (project.plugins.hasPlugin('com.android.application')) {
+        //    "$buildDir/intermediates/exploded-aar/**/classes.jar"
+        // }
+
+        property "sonar.projectKey", "gouyelliot_OpenSourceTest"
+        property "sonar.projectVersion", project.android.defaultConfig.versionName
+        property "sonar.organization", "gouyelliot"
+        property "sonar.host.url", "https://sonarcloud.io"
+        property "sonar.login", System.getenv('SONAR_TOKEN')
+
+        property "sonar.sources", "src/main/java"
+        property "sonar.tests", "src/test/java"
+        property "sonar.binaries", "$buildDir/intermediates/javac/debug/classes"
+
+        property "sonar.java.binaries", "$buildDir/intermediates/javac/debug/classes"
+        property "sonar.java.libraries", libraries
+
+        property "sonar.java.test.binaries", "$buildDir/intermediates/javac/debugUnitTest/classes"
+        property "sonar.java.test.libraries", libraries
+
+        // Junit report
+        property "sonar.junit.reportPaths", "$buildDir/test-results/testDebugUnitTest/TEST-com.github.gouyelliot.opensourcetest.ClassToTest.xml"
+
+        // Jacoco report
+        property "sonar.java.coveragePlugin", "jacoco"
+        property "sonar.coverage.jacoco.xmlReportPaths", "$buildDir/test-results/jacoco.xml"
+
+        // Lint report
+        property "sonar.androidLint.reportPaths", "$buildDir/reports/lint-results-debug.xml"
+    }
+}

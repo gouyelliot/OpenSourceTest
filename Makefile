@@ -16,4 +16,10 @@ test-coverage:
 lint:
 	./gradlew lintDebug
 
+codecov:
+	bash <(curl -s https://codecov.io/bash)
+
+sonar:
+	./gradlew sonarqube
+
 ci: clean lint test-coverage apk
