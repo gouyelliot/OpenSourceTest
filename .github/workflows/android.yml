@@ -17,10 +17,14 @@ jobs:
         run: make ci
       - name: Upload CodeCov
         env:
-          CODECOV_TOKEN: ${{ secrets.CODE_COV_UPLOAD_TOKEN }}
-        run: make codecov
-      - name: Upload SonarCloud
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_UPLOAD_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: make sonar
+          CODACY_PROJECT_TOKEN: ${{ secrets.CODACY_UPLOAD_TOKEN }}
+        run: make codacy
+#      - name: Upload CodeCov
+#        env:
+#          CODECOV_TOKEN: ${{ secrets.CODE_COV_UPLOAD_TOKEN }}
+#        run: make codecov
+#      - name: Upload SonarCloud
+#        env:
+#          SONAR_TOKEN: ${{ secrets.SONAR_UPLOAD_TOKEN }}
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#        run: make sonar

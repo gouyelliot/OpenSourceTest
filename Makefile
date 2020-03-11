@@ -19,6 +19,9 @@ lint:
 codecov:
 	curl -s https://codecov.io/bash | bash
 
+codacy:
+	curl -Ls https://coverage.codacy.com/get.sh | bash
+
 sonar:
 	./gradlew sonarqube
 
