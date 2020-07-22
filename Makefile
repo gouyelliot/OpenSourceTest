@@ -16,13 +16,14 @@ test-coverage:
 lint:
 	./gradlew lintDebug
 
-codecov:
-	curl -s https://codecov.io/bash | bash
+check-token:
+ifndef SONAR_TOKEN
+	$(error SONAR_TOKEN is undefined)
+endif
 
-codacy:
-	curl -Ls https://coverage.codacy.com/get.sh | bash
-
-sonar:
+sonar: check-token
 	./gradlew sonarqube
 
 ci: clean lint test-coverage apk
+
+.PHONY: ci sonar check-token

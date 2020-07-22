@@ -25,7 +25,7 @@ sonarqube {
         property "sonar.java.test.libraries", libraries
 
         // Junit report
-        property "sonar.junit.reportPaths", "$buildDir/test-results/testDebugUnitTest/TEST-com.github.gouyelliot.opensourcetest.ClassToTest.xml"
+        property "sonar.junit.reportPaths", "$buildDir/test-results/testDebugUnitTest/"
 
         // Jacoco report
         property "sonar.java.coveragePlugin", "jacoco"
